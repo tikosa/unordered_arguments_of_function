@@ -35,6 +35,12 @@ void logic(Param1 _p1, Param2 _p2, Param3 _p3, Param4 _p4)
 	std::cout << "Do actual logic\n";
 }
 
+// Another implementation of position
+// template <typename T, typename U=void, typename... Types>
+// constexpr size_t index() {
+//     return std::is_same<T, U>::value ? 0 : 1 + index<T, Types...>();
+// }
+
 template<typename ...Types>
 void f(Types ...args)
 {
